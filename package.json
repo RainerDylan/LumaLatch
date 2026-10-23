@@ -1,0 +1,22 @@
+{
+  "name": "lumalatch",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Jellyfin watch parties over Tailscale",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test tests/*.test.js && node extension/self-check.mjs",
+    "test:integration": "playwright test",
+    "verify": "npm test && npm run test:integration"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  }
+}

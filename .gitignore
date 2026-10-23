@@ -1,0 +1,35 @@
+# Dependencies, caches and generated releases
+node_modules/
+.cache/
+dist/
+test-results/
+playwright-report/
+blob-report/
+__pycache__/
+*.py[cod]
+*.log
+*.tsbuildinfo
+
+# Local credentials and runtime settings
+.env
+.env.*
+!.env.example
+settings.json
+*.key
+*.pem
+*.pfx
+*.p12
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Local agent instructions, internal run history and superseded source manual
+/AGENTS.md
+/docs/verification.md
+/docs/LumaLatch-Beginners-Guide-Windows-and-Mac.html
+/docs/LumaLatch-Beginners-Guide-Windows-and-Mac.pdf
+/docs/render-manual.mjs

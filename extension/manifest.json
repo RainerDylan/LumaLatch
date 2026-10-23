@@ -1,0 +1,24 @@
+{
+  "name": "LumaLatch",
+  "version": "0.2.0",
+  "description": "Watch Jellyfin together over your own signaling server.",
+  "manifest_version": 3,
+  "minimum_chrome_version": "116",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "LumaLatch",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "scripting",
+    "storage",
+    "activeTab"
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAylMEUQfm03KPvHJCNWhuYdZZt/UF1dTs/SwCs2sgYgwY/A/KtpyV4d77qXK7vEnzsB88c7UGHFKLUzwVF4XM/m/iKtLfR/vaE47nIL/GXloIDuvsznDcwAh6J25AzbGpodXmghbpk4BEH9/A6T6ECiSLIc1TEpMGmuCkjQgpvcVIZ8NePHBPWsNeBQ0NgaaNxXjd4jeFzCL86VmU1mi9TOMfP3zpCUxprYeRKBeJMiPat6P4TPoWQuC5/UBGjP3YS1scw651J3Cf+jOB2rwTDNEoZp5lvR4QVcfJNzOksTaHnX7PUUz5N7XF20TolbFOhgr/bqsATebDocmezJk2BQIDAQAB"
+}
